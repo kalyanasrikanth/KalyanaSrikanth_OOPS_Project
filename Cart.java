@@ -1,20 +1,8 @@
 package LabAssignment3;
 
-public class Product {
-	private Products name;
-	private double price;
+public class CartEmptyException extends RuntimeException {
 	
-	Product(Products name, double price){
-		this.name = name;
-		this.price = price;
+	public CartEmptyException(String message) {
+		super(message);
 	}
-
-	public Products getName() {
-		return name;
-	}
-
-	public double getPrice() {
-		return price;
-	}
-
 }
