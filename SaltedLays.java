@@ -1,4 +1,4 @@
-package LabAssignment3.vendingMachine;
+package LabAssignment3;
 
 public class SaltedLays extends Product{
 
