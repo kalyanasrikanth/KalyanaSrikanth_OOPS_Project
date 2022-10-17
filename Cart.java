@@ -1,20 +1,20 @@
-package LabAssignment3.vendingMachine;
+package LabAssignment3;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Product {
+	private Products name;
+	private double price;
+	
+	Product(Products name, double price){
+		this.name = name;
+		this.price = price;
+	}
 
-public class Cart {
-	private List<Product> cartList;
-	
-	Cart(){
-		this.cartList = new ArrayList<Product>();
+	public Products getName() {
+		return name;
 	}
-	
-	void addToCart(Product product) {
-		this.cartList.add(product);
+
+	public double getPrice() {
+		return price;
 	}
-	
-	public List<Product> getCartList() {
-		return cartList;
-	}
+
 }
